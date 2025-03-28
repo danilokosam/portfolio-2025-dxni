@@ -1,6 +1,16 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+
+const contextClass = {
+  success: "bg-blue-600",
+  error: "bg-red-600",
+  info: "bg-gray-600",
+  warning: "bg-orange-400",
+  default: "bg-indigo-600",
+  dark: "bg-white-600 font-gray-300",
+};
 
 export const Contact = () => {
   const [formData, setformData] = useState({
@@ -18,11 +28,6 @@ export const Contact = () => {
         throttle: 10000,
       },
     });
-    // console.log({
-    //   service: import.meta.env.VITE_SERVICE_ID,
-    //   template: import.meta.env.VITE_TEMPLATE_ID,
-    //   key: import.meta.env.VITE_PUBLIC_KEY,
-    // });
 
     emailjs
       .sendForm(
@@ -31,12 +36,18 @@ export const Contact = () => {
         e.target
       )
       .then(() => {
-        alert("Message sent successfully!");
+        toast.success("Message sent successfully!", {
+          position: "bottom-right",
+          autoClose: 3000,
+        });
         setformData({ name: "", email: "", message: "" });
       })
       .catch((error) => {
         console.error("Error sending emai :( :", error);
-        alert("Message failed to send!", error.text);
+        toast.error("Message failed to send!", {
+          position: "bottom-right",
+          autoClose: 3000,
+        });
       });
   };
   return (
@@ -109,6 +120,14 @@ export const Contact = () => {
           </form>
         </div>
       </RevealOnScroll>
+      <ToastContainer
+        className="text-sm sm:text-base"
+        toastClassName={({ type }) =>
+          `${contextClass[type || "default"]} text-sm p-2 sm:text-base sm:p-3`
+        }
+        position="bottom-right"
+        autoClose={3000}
+      />
     </section>
   );
 };
