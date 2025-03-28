@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div
@@ -11,7 +9,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     >
       <button
         onClick={() => setMenuOpen(false)}
-        className="absolute top-6 right-6 text-white text-3xl foucs:outline-none cursor-pointer"
+        className="absolute top-4 right-8 text-white text-3xl foucs:outline-none cursor-pointer"
         aria-label="Close menu"
       >
         &times;

@@ -10,7 +10,7 @@ export const Home = () => {
       <RevealOnScroll>
         {/* introduction  */}
         <div className="text-center z-10 px-6 order-1 md:order-none md:h-[480px] flex flex-col justify-center mt-24">
-          <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right ">
+          <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
             Hi, I'm Daniel
           </h1>
           <p className="text-gray-100 text-base md:text-lg mb-8 max-w-lg mx-auto leading-snug">

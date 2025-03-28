@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import '@fontsource-variable/quicksand';
+
 
 html,
 body {
@@ -6,6 +8,8 @@ body {
   padding: 0;
   background-color: #f3f4f6;
   color: #f3f4f6;
+  font-family: "Quicksand Variable", sans-serif;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -49,5 +53,9 @@ body {
 }
 
 .custom-mask {
-  mask-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.8) 60%, transparent 90%);
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(51, 51, 51, 0.8) 60%,
+    transparent 90%
+  );
 }
