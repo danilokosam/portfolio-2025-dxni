@@ -1,21 +1,23 @@
-import { LoadingScreen } from "./components/LoadingScreen";
-import { useState } from "react";
-import "./index.css";
-import { Navbar } from "./components/Navbar";
-import { MobileMenu } from "./components/MobileMenu";
-import { Home } from "./components/sections/Home";
-import { About } from "./components/sections/About";
-import { Projects } from "./components/sections/Projects";
-import { Contact } from "./components/sections/Contact";
+import { LoadingScreen } from './components/LoadingScreen';
+import { useState } from 'react';
+import './index.css';
+import { Navbar } from './components/Navbar';
+import { MobileMenu } from './components/MobileMenu';
+import { Home } from './components/sections/Home';
+import { About } from './components/sections/About';
+import { Projects } from './components/sections/Projects';
+import { Contact } from './components/sections/Contact';
 export const App = () => {
   const [isLoaded, setisLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      {!isLoaded && <LoadingScreen onComplete={() => setisLoaded(true)} />}
+      {!isLoaded && (
+        <LoadingScreen onComplete={() => setisLoaded(true)} />
+      )}
       <div
         className={`min-h-screen transition-opacity duration-700 ${
-          isLoaded ? "opacity-100" : "opacity-0"
+          isLoaded ? 'opacity-100' : 'opacity-0'
         } bg-gradient-to-br from-black via-gray-900 to-blue-950 text-gray-100`}
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />

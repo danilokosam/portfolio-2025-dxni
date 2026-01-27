@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect } from 'react';
 
 export const RevealOnScroll = ({ children }) => {
   const ref = useRef(null);
@@ -10,15 +10,15 @@ export const RevealOnScroll = ({ children }) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            entry.target.classList.add('visible');
             observer.unobserve(entry.target);
           }
         });
       },
       {
         threshold: 0.1,
-        rootMargin: "0px 0px -150px 0px",
-      }
+        rootMargin: '0px 0px -150px 0px',
+      },
     );
 
     if (currentRef) {
@@ -33,7 +33,7 @@ export const RevealOnScroll = ({ children }) => {
   }, []);
 
   return (
-    <div ref={ref} className="reveal">
+    <div ref={ref} className='reveal'>
       {children}
     </div>
   );
