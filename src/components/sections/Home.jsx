@@ -1,4 +1,4 @@
-import skin from '../../assets/img/25470495-288f-4824-9cf9-e69f0499dc38-removebg-preview.png';
+import skin from '/skin-profile.png';
 import { RevealOnScroll } from '../RevealOnScroll';
 
 export const Home = () => {
