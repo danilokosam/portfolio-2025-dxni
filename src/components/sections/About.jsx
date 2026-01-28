@@ -28,13 +28,16 @@ export const About = () => {
           </h2>
           <div className='group rounded-xl border border-white/10 bg-white/5 p-6 transition-all duration-500 ease-in-out hover:-translate-y-2 hover:border-blue-500/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.3),0_0_40px_rgba(34,211,238,0.1)]'>
             <p className='mb-6 text-gray-300'>
-              I'm a software engineer with a passion for creating
-              beautiful and user-friendly interfaces. My background
-              includes working in various tech companies and
-              contributing to open-source projects. I'm always eager
-              to learn and improve my skills, so feel free to reach
-              out if you're interested in working together or
-              discussing projects.
+              I'm a Full Stack Developer driven by the challenge of
+              building scalable, user-centric applications. With a
+              solid foundation in modern web technologies and a focus
+              on clean code, I’ve spent my time turning complex
+              problems into intuitive digital experiences. My path is
+              defined by a deep curiosity for how things work and a
+              commitment to continuous learning through specialized
+              training and hands-on projects. I'm always open to
+              collaborating on innovative solutions or discussing the
+              latest in tech, so feel free to reach out!
             </p>
 
             <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>

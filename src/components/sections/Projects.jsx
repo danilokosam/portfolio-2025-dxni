@@ -27,31 +27,22 @@ export const Projects = () => {
             {/* Project 1 */}
             {/* Project 2 */}
             <ProjectCard
-              title='Church Landing Page'
-              description='A modern, responsive church website built with Astro and Tailwind CSS...'
+              title='Full-Stack Real-Time Chat'
+              description='A comprehensive messaging platform featuring real-time communication via WebSockets. It includes secure JWT authentication, global state management with Zustand, and cloud-based profile customization using Cloudinary.'
               image={chatAppPreview}
               tech={[
                 'React',
-                'Tailwind CSS',
                 'Node.js',
                 'MongoDB',
                 'Socket.io',
-                'Express.js',
+                'Tailwind CSS',
+                'Zustand',
+                'Express',
               ]}
-              link='https://landing-page-2-eosin.vercel.app/'
-              github='https://github.com/danilokosam/landing-page-2'
+              link='https://chat-app-ten-livid-46.vercel.app'
+              github='https://github.com/danilokosam/chat-app'
             />
             {/* Project 2 */}
-            {/* Project 3 */}
-            <ProjectCard
-              title='Church Landing Page'
-              description='A modern, responsive church website built with Astro and Tailwind CSS...'
-              image={churchPreview}
-              tech={['Astro', 'Tailwind CSS', 'TypeScript']}
-              link='https://landing-page-2-eosin.vercel.app/'
-              github='https://github.com/danilokosam/landing-page-2'
-            />
-            {/* Project 3 */}
           </div>
         </div>
       </RevealOnScroll>
